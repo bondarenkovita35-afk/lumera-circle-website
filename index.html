@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LUMÉRA CIRCLE — Premium Beauty Studio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+</head>
+
+<body data-title-key="nav_home">
+    <!-- glowing shapes unique for this page -->
+    <div class="bgShapes" aria-hidden="true">
+        <span class="shape" style="left:-160px;top:160px;width:560px;height:560px;"></span>
+        <span class="shape" style="right:-180px;top:260px;width:620px;height:620px;"></span>
+        <span class="shape" style="left:18%;bottom:-220px;width:780px;height:520px;border-radius:260px;"></span>
+    </div>
+
+    <header class="topbar">
+        <div class="container">
+            <nav class="nav" aria-label="Main navigation">
+                <a class="brand" href="./index.html">
+                    <div class="brand__mark" aria-hidden="true"><span>LC</span></div>
+                    <div class="brand__text">
+                        <div class="brand__name">LUMÉRA CIRCLE</div>
+                        <div class="brand__script">Premium Beauty Studio</div>
+                    </div>
+                </a>
+
+                <div class="nav__links">
+                    <a href="./index.html" data-i18n="nav_home">Главная</a>
+                    <a href="./services.html" data-i18n="nav_services">Услуги</a>
+                    <a href="./pricing.html" data-i18n="nav_pricing">Прайс</a>
+                    <a href="./reviews.html" data-i18n="nav_reviews">Отзывы</a>
+                    <a href="./booking.html" data-i18n="nav_booking">Запись</a>
+                    <a href="./contacts.html" data-i18n="nav_contacts">Контакты</a>
+                </div>
+
+                <div class="nav__right">
+                    <div class="lang" aria-label="Language switch">
+                        <button type="button" class="langBtn" data-lang="ru">RU</button>
+                        <button type="button" class="langBtn" data-lang="en">EN</button>
+                    </div>
+
+                    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- mobile -->
+            <div class="mobilePanel" id="mobilePanel">
+                <div class="mobilePanel__inner">
+                    <a href="./index.html" data-i18n="nav_home">Главная</a>
+                    <a href="./services.html" data-i18n="nav_services">Услуги</a>
+                    <a href="./pricing.html" data-i18n="nav_pricing">Прайс</a>
+                    <a href="./reviews.html" data-i18n="nav_reviews">Отзывы</a>
+                    <a href="./booking.html" data-i18n="nav_booking">Запись</a>
+                    <a href="./contacts.html" data-i18n="nav_contacts">Контакты</a>
+
+                    <div class="lang">
+                        <button type="button" class="langBtn" data-lang="ru">RU</button>
+                        <button type="button" class="langBtn" data-lang="en">EN</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1 data-i18n="hero_h1">Воздушная эстетика. Золотая точность.</h1>
+            <p class="lead" data-i18n="hero_p">
+                Премиальная студия красоты в стиле мягкого света и идеальной геометрии...
+            </p>
+
+            <div class="btnRow">
+                <a class="btn-gold" href="./booking.html" data-i18n="btn_book">Записаться</a>
+                <a class="btn-gold" href="./services.html" data-i18n="nav_services">Услуги</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="sectionTitle" data-i18n="sec_dir">Наши направления</h2>
+            <p class="lead" style="margin-top:0;">
+                <span class="metal" data-i18n="services_p">Выберите направление — администратор уточнит детали...</span>
+            </p>
+
+            <div class="grid">
+                <article class="card">
+                    <h3 data-i18n="dir_1_t">Маникюр и педикюр</h3>
+                    <p data-i18n="dir_1_p">Аккуратная форма, чистая работа...</p>
+                    <small>SEK · Premium</small>
+                </article>
+
+                <article class="card">
+                    <h3 data-i18n="dir_2_t">Брови и ламинирование</h3>
+                    <p data-i18n="dir_2_p">Естественный результат...</p>
+                    <small>Natural · Clean</small>
+                </article>
+
+                <article class="card">
+                    <h3 data-i18n="dir_3_t">Лазерная эпиляция</h3>
+                    <p data-i18n="dir_3_p">Комфортный протокол...</p>
+                    <small>Comfort-first</small>
+                </article>
+
+                <article class="card">
+                    <h3 data-i18n="dir_4_t">Косметология</h3>
+                    <p data-i18n="dir_4_p">Уход, который видно...</p>
+                    <small>Care · Safe</small>
+                </article>
+
+                <article class="card">
+                    <h3 data-i18n="dir_5_t">Массаж</h3>
+                    <p data-i18n="dir_5_p">Снятие напряжения...</p>
+                    <small>Balance</small>
+                </article>
+
+                <article class="card">
+                    <h3 data-i18n="sec_why">Почему выбирают нас</h3>
+                    <p data-i18n="why_3_p">Тихо, красиво, воздушно...</p>
+                    <small>Service · Quality</small>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="sectionTitle" data-i18n="sec_why">Почему выбирают нас</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3 data-i18n="why_1_t">Стерильность</h3>
+                    <p data-i18n="why_1_p">Одноразовые расходники...</p>
+                </article>
+                <article class="card">
+                    <h3 data-i18n="why_2_t">Прозрачная цена</h3>
+                    <p data-i18n="why_2_p">Никаких сюрпризов...</p>
+                </article>
+                <article class="card">
+                    <h3 data-i18n="why_3_t">Премиальный комфорт</h3>
+                    <p data-i18n="why_3_p">Вы отдыхаете — мы работаем.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footerRow">
+                <p data-i18n="footer_line">© LUMÉRA CIRCLE · Stockholm</p>
+
+                <a class="studioLink" href="https://bondarenkovita35-afk.github.io/vs-litecode-studio/" target="_blank"
+                    rel="noopener">
+                    <img class="studioLogo" src="./images/logo-vs-litecode.png" alt="VS LiteCode Studio">
+                    <div class="studioText">
+                        <span data-i18n="footer_credit">Designed & built by</span> <strong>VS LiteCode Studio</strong>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

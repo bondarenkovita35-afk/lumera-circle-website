@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Services — LUMÉRA CIRCLE</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+</head>
+
+<body data-title-key="nav_services">
+    <div class="bgShapes" aria-hidden="true">
+        <span class="shape" style="left:-200px;top:220px;width:640px;height:640px;"></span>
+        <span class="shape" style="right:-140px;top:120px;width:520px;height:520px;"></span>
+        <span class="shape" style="right:14%;bottom:-260px;width:820px;height:560px;border-radius:300px;"></span>
+    </div>
+
+    <header class="topbar">
+        <div class="container">
+            <nav class="nav">
+                <a class="brand" href="./index.html">
+                    <div class="brand__mark"><span>LC</span></div>
+                    <div class="brand__text">
+                        <div class="brand__name">LUMÉRA CIRCLE</div>
+                        <div class="brand__script">Premium Beauty Studio</div>
+                    </div>
+                </a>
+
+                <div class="nav__links">
+                    <a href="./index.html" data-i18n="nav_home">Главная</a>
+                    <a href="./services.html" data-i18n="nav_services">Услуги</a>
+                    <a href="./pricing.html" data-i18n="nav_pricing">Прайс</a>
+                    <a href="./reviews.html" data-i18n="nav_reviews">Отзывы</a>
+                    <a href="./booking.html" data-i18n="nav_booking">Запись</a>
+                    <a href="./contacts.html" data-i18n="nav_contacts">Контакты</a>
+                </div>
+
+                <div class="nav__right">
+                    <div class="lang">
+                        <button type="button" class="langBtn" data-lang="ru">RU</button>
+                        <button type="button" class="langBtn" data-lang="en">EN</button>
+                    </div>
+                    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </nav>
+
+            <div class="mobilePanel" id="mobilePanel">
+                <div class="mobilePanel__inner">
+                    <a href="./index.html" data-i18n="nav_home">Главная</a>
+                    <a href="./services.html" data-i18n="nav_services">Услуги</a>
+                    <a href="./pricing.html" data-i18n="nav_pricing">Прайс</a>
+                    <a href="./reviews.html" data-i18n="nav_reviews">Отзывы</a>
+                    <a href="./booking.html" data-i18n="nav_booking">Запись</a>
+                    <a href="./contacts.html" data-i18n="nav_contacts">Контакты</a>
+                    <div class="lang">
+                        <button type="button" class="langBtn" data-lang="ru">RU</button>
+                        <button type="button" class="langBtn" data-lang="en">EN</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1 data-i18n="services_h1">Услуги</h1>
+            <p class="lead" data-i18n="services_p">Выберите направление — администратор уточнит детали...</p>
+            <div class="btnRow">
+                <a class="btn-gold" href="./booking.html" data-i18n="btn_book">Записаться</a>
+                <a class="btn-gold" href="./pricing.html" data-i18n="nav_pricing">Прайс</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="grid">
+                <article class="card">
+                    <h3 data-i18n="srv_1_t">Маникюр</h3>
+                    <p data-i18n="srv_1_p">Комби, укрепление, покрытие...</p>
+                </article>
+                <article class="card">
+                    <h3 data-i18n="srv_2_t">Педикюр</h3>
+                    <p data-i18n="srv_2_p">Комфортная обработка...</p>
+                </article>
+                <article class="card">
+                    <h3 data-i18n="srv_3_t">Брови / ламинирование</h3>
+                    <p data-i18n="srv_3_p">Форма, оттенок...</p>
+                </article>
+                <article class="card">
+                    <h3 data-i18n="srv_4_t">Лазерная эпиляция</h3>
+                    <p data-i18n="srv_4_p">Деликатный протокол...</p>
+                </article>
+                <article class="card">
+                    <h3 data-i18n="srv_5_t">Косметология</h3>
+                    <p data-i18n="srv_5_p">Уходы, чистки...</p>
+                </article>
+                <article class="card">
+                    <h3 data-i18n="srv_6_t">Массаж</h3>
+                    <p data-i18n="srv_6_p">Тело и лицо...</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footerRow">
+                <p data-i18n="footer_line">© LUMÉRA CIRCLE · Stockholm</p>
+                <a class="studioLink" href="https://bondarenkovita35-afk.github.io/vs-litecode-studio/" target="_blank"
+                    rel="noopener">
+                    <img class="studioLogo" src="./images/logo-vs-litecode.png" alt="VS LiteCode Studio">
+                    <div class="studioText"><span data-i18n="footer_credit">Designed & built by</span> <strong>VS
+                            LiteCode Studio</strong></div>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

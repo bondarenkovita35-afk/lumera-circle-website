@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Booking — LUMÉRA CIRCLE</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+</head>
+
+<body data-title-key="nav_booking">
+    <div class="bgShapes" aria-hidden="true">
+        <span class="shape" style="left:-200px;top:220px;width:720px;height:720px;"></span>
+        <span class="shape" style="right:-180px;top:260px;width:640px;height:640px;"></span>
+        <span class="shape" style="left:22%;bottom:-260px;width:860px;height:560px;border-radius:320px;"></span>
+    </div>
+
+    <header class="topbar">
+        <div class="container">
+            <nav class="nav">
+                <a class="brand" href="./index.html">
+                    <div class="brand__mark"><span>LC</span></div>
+                    <div class="brand__text">
+                        <div class="brand__name">LUMÉRA CIRCLE</div>
+                        <div class="brand__script">Premium Beauty Studio</div>
+                    </div>
+                </a>
+
+                <div class="nav__links">
+                    <a href="./index.html" data-i18n="nav_home">Главная</a>
+                    <a href="./services.html" data-i18n="nav_services">Услуги</a>
+                    <a href="./pricing.html" data-i18n="nav_pricing">Прайс</a>
+                    <a href="./reviews.html" data-i18n="nav_reviews">Отзывы</a>
+                    <a href="./booking.html" data-i18n="nav_booking">Запись</a>
+                    <a href="./contacts.html" data-i18n="nav_contacts">Контакты</a>
+                </div>
+
+                <div class="nav__right">
+                    <div class="lang">
+                        <button type="button" class="langBtn" data-lang="ru">RU</button>
+                        <button type="button" class="langBtn" data-lang="en">EN</button>
+                    </div>
+                    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </nav>
+
+            <div class="mobilePanel" id="mobilePanel">
+                <div class="mobilePanel__inner">
+                    <a href="./index.html" data-i18n="nav_home">Главная</a>
+                    <a href="./services.html" data-i18n="nav_services">Услуги</a>
+                    <a href="./pricing.html" data-i18n="nav_pricing">Прайс</a>
+                    <a href="./reviews.html" data-i18n="nav_reviews">Отзывы</a>
+                    <a href="./booking.html" data-i18n="nav_booking">Запись</a>
+                    <a href="./contacts.html" data-i18n="nav_contacts">Контакты</a>
+                    <div class="lang">
+                        <button type="button" class="langBtn" data-lang="ru">RU</button>
+                        <button type="button" class="langBtn" data-lang="en">EN</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1 data-i18n="booking_h1">Запись онлайн</h1>
+            <p class="lead" data-i18n="booking_p">Оставьте заявку — администратор подтвердит время...</p>
+        </section>
+
+        <section class="section">
+            <div class="grid">
+                <div class="card" style="grid-column: span 12;">
+                    <h3 data-i18n="form_title">Форма записи</h3>
+
+                    <form id="bookingForm">
+                        <div class="fieldGrid">
+                            <input class="input" name="name" required data-i18n-ph="ph_name" placeholder="Имя">
+                            <input class="input" name="phone" required data-i18n-ph="ph_phone" placeholder="Телефон">
+
+                            <select class="select full" name="service" required>
+                                <option value="Manicure" data-i18n="opt_mani">Маникюр</option>
+                                <option value="Pedicure" data-i18n="opt_pedi">Педикюр</option>
+                                <option value="Brows / Lamination" data-i18n="opt_brows">Брови / ламинирование</option>
+                                <option value="Laser" data-i18n="opt_laser">Лазерная эпиляция</option>
+                                <option value="Massage" data-i18n="opt_massage">Массаж</option>
+                                <option value="Cosmetology" data-i18n="opt_cosm">Косметология</option>
+                            </select>
+
+                            <input class="input full" name="date" type="date">
+                            <textarea class="textarea full" name="comment" rows="4" data-i18n-ph="ph_comment"
+                                placeholder="Комментарий..."></textarea>
+                        </div>
+
+                        <div class="btnRow">
+                            <button class="btn-gold" type="submit" data-i18n="btn_send">Отправить заявку</button>
+                            <button class="btn-gold" type="button" id="btnWA" data-i18n="btn_wa">WhatsApp</button>
+                            <button class="btn-gold" type="button" id="btnTG" data-i18n="btn_tg">Telegram</button>
+                        </div>
+
+                        <p class="lead" style="margin-top:14px;" data-i18n="booking_note">
+                            Оплата после подтверждения времени. Доступны: карта, Swish, наличные.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footerRow">
+                <p data-i18n="footer_line">© LUMÉРА CIRCLE · Stockholm</p>
+                <a class="studioLink" href="https://bondarenkovita35-afk.github.io/vs-litecode-studio/" target="_blank"
+                    rel="noopener">
+                    <img class="studioLogo" src="./images/logo-vs-litecode.png" alt="VS LiteCode Studio">
+                    <div class="studioText"><span data-i18n="footer_credit">Designed & built by</span> <strong>VS
+                            LiteCode Studio</strong></div>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

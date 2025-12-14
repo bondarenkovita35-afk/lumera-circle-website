@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacts — LUMÉRA CIRCLE</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+</head>
+
+<body data-title-key="nav_contacts">
+    <div class="bgShapes" aria-hidden="true">
+        <span class="shape" style="right:-160px;top:140px;width:560px;height:560px;"></span>
+        <span class="shape" style="left:-200px;top:320px;width:720px;height:720px;"></span>
+        <span class="shape" style="left:16%;bottom:-260px;width:860px;height:560px;border-radius:320px;"></span>
+    </div>
+
+    <header class="topbar">
+        <div class="container">
+            <nav class="nav">
+                <a class="brand" href="./index.html">
+                    <div class="brand__mark"><span>LC</span></div>
+                    <div class="brand__text">
+                        <div class="brand__name">LUMÉRA CIRCLE</div>
+                        <div class="brand__script">Premium Beauty Studio</div>
+                    </div>
+                </a>
+
+                <div class="nav__links">
+                    <a href="./index.html" data-i18n="nav_home">Главная</a>
+                    <a href="./services.html" data-i18n="nav_services">Услуги</a>
+                    <a href="./pricing.html" data-i18n="nav_pricing">Прайс</a>
+                    <a href="./reviews.html" data-i18n="nav_reviews">Отзывы</a>
+                    <a href="./booking.html" data-i18n="nav_booking">Запись</a>
+                    <a href="./contacts.html" data-i18n="nav_contacts">Контакты</a>
+                </div>
+
+                <div class="nav__right">
+                    <div class="lang">
+                        <button type="button" class="langBtn" data-lang="ru">RU</button>
+                        <button type="button" class="langBtn" data-lang="en">EN</button>
+                    </div>
+                    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </nav>
+
+            <div class="mobilePanel" id="mobilePanel">
+                <div class="mobilePanel__inner">
+                    <a href="./index.html" data-i18n="nav_home">Главная</a>
+                    <a href="./services.html" data-i18n="nav_services">Услуги</a>
+                    <a href="./pricing.html" data-i18n="nav_pricing">Прайс</a>
+                    <a href="./reviews.html" data-i18n="nav_reviews">Отзывы</a>
+                    <a href="./booking.html" data-i18n="nav_booking">Запись</a>
+                    <a href="./contacts.html" data-i18n="nav_contacts">Контакты</a>
+                    <div class="lang">
+                        <button type="button" class="langBtn" data-lang="ru">RU</button>
+                        <button type="button" class="langBtn" data-lang="en">EN</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1 data-i18n="contacts_h1">Контакты</h1>
+            <p class="lead" data-i18n="contacts_p">Центр Стокгольма. Удобно добраться...</p>
+            <div class="btnRow">
+                <a class="btn-gold" href="./booking.html" data-i18n="c_btn">Записаться</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="grid">
+                <article class="card" style="grid-column: span 5;">
+                    <h3 class="metal" data-i18n="c_phone">Телефон</h3>
+                    <p>+46 70 000 00 00</p>
+
+                    <h3 class="metal" style="margin-top:14px;" data-i18n="c_hours">Часы</h3>
+                    <p>10:00–20:00</p>
+
+                    <h3 class="metal" style="margin-top:14px;" data-i18n="c_addr">Адрес</h3>
+                    <p>Stockholm, Sweden</p>
+
+                    <h3 class="metal" style="margin-top:14px;" data-i18n="c_social">Соцсети</h3>
+                    <p>Instagram · Telegram · WhatsApp</p>
+                </article>
+
+                <article class="card" style="grid-column: span 7;">
+                    <h3 class="metal">Map</h3>
+
+                    <div class="mapWrap" style="margin-top:12px;">
+                        <!-- Поменяй адрес/поиск при необходимости -->
+                        <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            src="https://www.google.com/maps?q=Stockholm%20Centralstation&output=embed"
+                            title="Google Map">
+                        </iframe>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footerRow">
+                <p data-i18n="footer_line">© LUMÉRA CIRCLE · Stockholm</p>
+                <a class="studioLink" href="https://bondarenkovita35-afk.github.io/vs-litecode-studio/" target="_blank"
+                    rel="noopener">
+                    <img class="studioLogo" src="./images/logo-vs-litecode.png" alt="VS LiteCode Studio">
+                    <div class="studioText"><span data-i18n="footer_credit">Designed & built by</span> <strong>VS
+                            LiteCode Studio</strong></div>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
